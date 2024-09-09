@@ -473,7 +473,7 @@ function GrubSetup {
          -c \
          -d '"${EFI_DEV}"' \
          -p 1 \
-         -l \\EFI\\redhat\\shimx64.efi \
+         -l \\EFI\\rocky\\shimx64.efi \
          -L '"${CHROOT_OS_NAME}"'
      '
      
@@ -483,7 +483,7 @@ function GrubSetup {
            GRUB_CFG="/boot/efi/EFI/centos/grub.cfg"
            ;;
        *)
-           GRUB_CFG="/boot/efi/EFI/redhat/grub.cfg"
+           GRUB_CFG="/boot/efi/EFI/rocky/grub.cfg"
            ;;
      esac
    else
